@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(PENUP.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(25px);
+
+}
+.hero h1{
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: white;
+}
+.hero h1 span{
+    color: chocolate;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.171);
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+}
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: rgba(70, 131, 180, 0.496);
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+}
+button:hover{
+    background-color: rgba(70, 131, 180, 0.750);
+    box-shadow: 0px 0px 15px 1px skyblue;
+}
+button:active{
+    background-color: steelblue;
+}
+select{
+    flex: 1;
+    color: black;
+    background: rgba(255, 255, 255, 0.171);
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
