@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,rgba(70, 131, 180, 0.649),silver);
+
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+
+   
+}
+.app img.cloud{
+    width: 90px;
+    animation: cloud 2s infinite alternate;
+    position: absolute;
+    right: 40%;
+    bottom: 35%;
+}
+.season{
+   width: 50%;
+   height: 50%;
+}
+.season img{
+    width: 50px;
+}
+.season img.snow{
+    width: 200px;
+    position: absolute;
+    left: 30%;
+    bottom: 12%;
+    z-index: -1;
+    opacity: 1;
+    animation: snowman 2s infinite alternate;
+
+}
+.season img.sun{
+    width: 150px;
+    position: absolute;
+    right: 34%;
+    top: 10%;
+    z-index: -1;
+    opacity: 0.6;
+    animation: sun 2s infinite alternate;
+
+}
+.season img.spring{
+    width: 150px;
+    position: absolute;
+    right: 34%;
+    bottom: 12%;
+    z-index: -1;
+    opacity: 0.6;
+
+    transform: rotate(10deg);
+    animation: spring 2s infinite alternate;
+
+}
+.season img.autumn{
+    width: 150px;
+    position: absolute;
+    left: 34%;
+    top: 10%;
+    z-index: -1;
+    opacity: 0.6;
+    transform: rotate(65deg);
+    animation: autumn 2s infinite alternate;
+
+}
+.app .header{
+    width: 100%;
+    height: 220px;
+    padding: 30px 35px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.930);
+    background: linear-gradient(45deg,rgba(70, 131, 180, 0.999),rgba(255, 255, 255, 0.999));
+  
+  
+}
+.app .header h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 25px 0;
+    border-radius: 5px;
+    color: black;
+
+}
+.app .header input{
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    border-bottom:1px solid black;
+    text-transform: capitalize;
+
+}
+.app .header input:focus{
+    border-bottom:3px solid black;
+}
+.app .header input::placeholder{
+    color: black;
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.930);
+    border-radius: 15px;
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(45deg,rgba(70, 131, 180, 0.999),rgba(255, 255, 255, 0.999));
+
+}
+.content .city{
+   text-align: start;
+   margin: 15px;
+   font-size: 25px;
+   font-weight: 500;
+   color: rgb(36, 36, 36);
+}
+.content .temp{
+    text-align: start;
+    margin:0 15px;
+   font-size: 25px;
+   font-weight: 500;
+
+ }
+ .content .desc{
+    text-align: center;
+    margin: 30px 15px;
+   font-size: 22px;
+   text-transform: capitalize;
+
+ }
+ .content .minmax{
+    text-align: center;
+    font-size: 18px;
+ }
+ @keyframes cloud {
+    0%{
+        transform:rotate(15deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+ }
+ @keyframes snowman {
+    0%{
+        left: 26%;
+        transform:rotate(0deg);
+    }
+    100%{
+        opacity: 0.3;
+        transform: rotate(10deg);
+    }
+ }
+ @keyframes autumn {
+    0%{
+        
+    }
+    100%{
+        top: 25%;
+        left: 32%;
+
+    }
+ }
+ @keyframes sun {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+ }
+ @keyframes  spring {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 0.9;
+    }
+ }
